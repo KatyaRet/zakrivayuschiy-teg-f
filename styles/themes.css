@@ -4,3 +4,44 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+:root.theme-light {
+    --background-color: #fff;
+    --accent-color: #000;
+    --bg-linear-gradient-vertical: #d3d3d3;
+    --bg-linear-gradient-top: #e7e7e7;
+    --bg-linear-gradient-bottom: #1a1a1a;
+    --text-shadow-color: #fff;
+    --button-hover-color: #fff;
+    --contour-color: #000;
+    --filling-color: #FF0000;
+}
+
+:root.theme-dark {
+    --background-color: #000;
+    --accent-color: #00CC14;
+    --font-weight-card: 465;
+    --font-weight-title: 785;
+    --bg-linear-gradient-vertical: #000;
+    --bg-linear-gradient-top: #007f0c;
+    --bg-linear-gradient-bottom: #004306;
+    --text-shadow-color: #000;
+    --button-hover-color: #00CC14;
+    --contour-color: #00CC14;
+    --filling-color: #FF0000;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+    --background-color: #000;
+    --accent-color: #00CC14;
+    --font-weight-card: 465;
+    --font-weight-title: 785;
+    --bg-linear-gradient-vertical: #000;
+    --bg-linear-gradient-top: #007f0c;
+    --bg-linear-gradient-bottom: #004306;
+    --text-shadow-color: #000;
+    --button-hover-color: #00CC14;
+    --contour-color: #00CC14;
+    --filling-color: #FF0000;
+    }
+}

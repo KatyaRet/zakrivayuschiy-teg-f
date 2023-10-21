@@ -1,5 +1,4 @@
 /* Здесь вы напишете основную часть стилей страницы.
-
 Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
 ✦ theme-dark — класс тёмной темы
 ✦ theme-light — класс светлой темы
@@ -377,7 +376,7 @@
   font-weight: 400;
   max-inline-size: fit-content;
   position: relative;
-  z-index: 1; 
+  z-index: 1;
   color: var(--button-hover-color, #fff);
   mix-blend-mode: difference;
   transition: color 1s ease;

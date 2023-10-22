@@ -402,11 +402,6 @@ dialog::backdrop {
     width: 100%;
   }
 
-  .card__image-content {
-    width: 371px;
-    height: 372px;
-  }
-
   .label {
     top: 23px;
     right: 11px;

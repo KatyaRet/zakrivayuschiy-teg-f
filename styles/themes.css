@@ -13,7 +13,7 @@
     --text-shadow-color: #fff;
     --button-hover-color: #fff;
     --contour-color: #000;
-    --filling-color: #FF0000;
+    --floppy-color: #fff;
 }
 
 :root.theme-dark {
@@ -27,7 +27,7 @@
     --text-shadow-color: #000;
     --button-hover-color: #00CC14;
     --contour-color: #00CC14;
-    --filling-color: #FF0000;
+    --floppy-color: #00CC14;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -42,6 +42,6 @@
     --text-shadow-color: #000;
     --button-hover-color: #00CC14;
     --contour-color: #00CC14;
-    --filling-color: #FF0000;
+    --floppy-color: #00CC14;
     }
 }

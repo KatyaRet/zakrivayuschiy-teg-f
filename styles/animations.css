@@ -13,6 +13,112 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 
+.theme-menu__button:hover {
+  transition: opacity 0.3s ease;
+}
+
+.theme-menu__button::after {
+  transition: width 0.3s ease;
+}
+
+.theme-menu__button:disabled {
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.theme-menu__button:disabled::before {
+  animation: pointer-shifting 0.5s ease-in-out infinite;
+  animation-direction: alternate-reverse;
+}
+
+.card__icon-button:focus-visible {
+  transition: outline 0.3s ease;
+}
+
+.like-icon .core {
+  fill: transparent;
+  transition-delay: 0.03s;
+}
+
+.like-icon:hover .core {
+  fill: var(--contour-color, #000);
+  transition: fill 0.3s 0s linear;
+}
+
+.like-icon .main-body {
+  fill: transparent;
+  transition-delay: 0s;
+}
+  
+.like-icon:hover .main-body {
+  fill: var(--contour-color, #000);
+  transition: fill 0.3s 0.05s linear;
+}
+  
+.like-icon:active .core {
+  fill: var(--filling-color, #FF0000);
+  transition: fill 0.3s 0s linear;
+}
+  
+.like-icon:active .main-body {
+  fill: var(--filling-color, #FF0000);
+  transition: fill 0.3s 0.05s linear;
+}
+  
+.like-icon.is-liked .core {
+  fill: var(--filling-color, #FF0000);
+  transition: fill 0.3s 0s linear;
+}
+  
+.like-icon.is-liked .main-body {
+  fill: var(--filling-color, #FF0000);
+  transition: fill 0.3s 0.03s linear;
+}
+  
+.like-icon.is-liked .contour {
+  fill: var(--filling-color, #FF0000);
+  transition: fill 0.3s 0.06s linear;
+}
+  
+.like-icon .contour {
+  fill: var(--contour-color, #000);
+  transition: fill 0.1s 0s linear;
+}
+  
+.like-icon.is-liked .heart {
+  animation: heartbeat 0.3s ease-in 0.1s 1;
+  transform-origin: center;
+}
+  
+.like-icon.is-liked .sparks {
+  animation: sparks 0.3s ease-in 0.3s 1;
+  transform-origin: center;
+}
+
+.card__like-button:focus-visible,
+.button__save:focus-visible,
+.dialog__button:focus-visible {
+  transition: box-shadow 0.3s ease;
+}
+
+.card__like-button::after,
+.button__save::after,
+.dialog__button::after {
+  transform: scaleX(0);
+  transition: transform 0.5s ease-in-out;
+  transform-origin: left;
+}
+
+.card__like-button:hover::after,
+.button__save:hover::after,
+.dialog__button:hover::after {
+  transform: scaleX(1);
+}
+
+.button__text {
+  transition: color 1s ease;
+}
+
 @keyframes pointer-shifting {
     
     from {
